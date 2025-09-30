@@ -31,8 +31,8 @@ module tt_um_urish_simon (
   assign uio_oe  = 8'b0111_1111;
 
   ring_osc #(
-      .CHAIN_LENGTH(13),
-      .DIVIDER_BITS(13)  // For ~62.5 KHz output, determined by measuring tt05's tt_um_urish_ringosc_cnt
+      .CHAIN_LENGTH(9), // According to simulation results, we'll get about 415.31 MHz with 9 stages
+      .DIVIDER_BITS(13)  // For ~50.7 KHz output, determined by simulating the ring oscillator
   ) ring_osc (
       .en(clk_sel),
       .clk_out(clk_ring_osc),

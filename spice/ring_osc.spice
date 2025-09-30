@@ -10,13 +10,9 @@ x5 net5 net6 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
 x6 net6 net1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
 x7 net1 net7 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
 x8 net7 net8 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-x9 net8 net9 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-x10 net9 net10 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-x11 net10 net11 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-x12 net11 net12 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-x13 net12 clk_out VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-x14 en clk_out net13 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__and2_1
-x15 VDD en VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__buf_1
+x9 net8 clk_out VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+x10 en clk_out net13 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__and2_1
+x11 VDD en VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__buf_1
 C1 net13 VSS 2f m=1
 C2 net2 VSS 2f m=1
 C3 net3 VSS 2f m=1
@@ -26,10 +22,6 @@ C6 net6 VSS 2f m=1
 C7 net1 VSS 2f m=1
 C8 net7 VSS 2f m=1
 C9 net8 VSS 2f m=1
-C10 net9 VSS 2f m=1
-C11 net10 VSS 2f m=1
-C12 net11 VSS 2f m=1
-C13 net12 VSS 2f m=1
 **** begin user architecture code
 
 .include design.ngspice
