@@ -16,7 +16,7 @@ jobs:
       - name: Build GDS
         uses: TinyTapeout/tt-gds-action@ttsky25b
         with:
-          tools-ref: 095401404167107f896bc8ece9b0adef323882c2
+          tools-ref: 67541ef75958afb2cbacda5c21fe8b6d06c51567
           pdk: sky130A
 
   precheck:
@@ -26,7 +26,7 @@ jobs:
       - name: Run Tiny Tapeout Precheck
         uses: TinyTapeout/tt-gds-action/precheck@ttsky25b
         with:
-          tools-ref: 095401404167107f896bc8ece9b0adef323882c2
+          tools-ref: 67541ef75958afb2cbacda5c21fe8b6d06c51567
 
   gl_test:
     needs: gds
@@ -40,7 +40,7 @@ jobs:
       - name: GL test
         uses: TinyTapeout/tt-gds-action/gl_test@ttsky25b
         with:
-          tools-ref: 095401404167107f896bc8ece9b0adef323882c2
+          tools-ref: 67541ef75958afb2cbacda5c21fe8b6d06c51567
 
   viewer:
     needs: gds
@@ -51,4 +51,4 @@ jobs:
     steps:
       - uses: TinyTapeout/tt-gds-action/viewer@ttsky25b
         with:
-          tools-ref: 095401404167107f896bc8ece9b0adef323882c2
+          tools-ref: 67541ef75958afb2cbacda5c21fe8b6d06c51567
