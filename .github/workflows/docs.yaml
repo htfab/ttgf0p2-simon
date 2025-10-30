@@ -16,4 +16,4 @@ jobs:
       - name: Build docs
         uses: TinyTapeout/tt-gds-action/docs@ttsky25b
         with:
-          tools-ref: 8132ad6ecc9a6d302d34274025bde8c79828a878
+          tools-ref: 095401404167107f896bc8ece9b0adef323882c2
